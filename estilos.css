@@ -1,0 +1,25 @@
+div {
+	text-align: center;
+}
+
+header {
+	background: #CFC6C6;
+	margin: 0;
+	overflow: hidden;
+	padding: auto;
+	text-align: center;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+#principal {
+	text-align: center;
+}
+
+#subir {
+	margin-top: 1em;
+}
+
