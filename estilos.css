@@ -4,10 +4,10 @@ div {
 
 header {
 	background: #CFC6C6;
-	margin: 0;
+	margin:0;
 	overflow: hidden;
-	padding: auto;
 	text-align: center;
+	padding: auto;
 	width: 100%;
 }
 
@@ -15,11 +15,36 @@ ul {
 	list-style: none;
 }
 
+.contenedor_general{
+	display: flex;
+	border:1px solid blue;
+	margin-left: 1em;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+	overflow: hidden;
+}
+
 .contenedor {
+	border:1px solid red;
 	display: flex;
 	justify-content: center;
     align-items: center;
-    padding-top: 3em;
+    margin-left: -2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.imagenes {
+	background: gray;
+	width: 100px;
+	height: 100px;
+	margin: 0.5em;
+}
+
+.jugadas{
+	border:1px solid purple;
+
 }
 
 .jugar {
@@ -27,7 +52,6 @@ ul {
 	border-radius: 10px;
 	padding: 1em;
 	width: 150px;
-	margin-top: 2em;
 }
 
 .maquina {
