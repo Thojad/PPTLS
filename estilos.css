@@ -15,6 +15,52 @@ ul {
 	list-style: none;
 }
 
+.contenedor {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.jugar {
+	background: #E23333;
+	border-radius: 10px;
+	padding: 1em;
+	width: 150px;
+	margin-top: 2em;
+}
+
+.maquina {
+	background: blue;
+	border-radius: 20px;
+	height: 200px;
+	margin-left:1.5em; 
+	width: 200px;
+
+
+}
+
+.usuario {
+	border-radius: 20px;
+	background: red;
+	height: 200px;
+	margin-right:1.5em; 
+	width: 200px;
+
+}
+
+.usuario figure {
+	margin-top: 25px;
+}
+
+.usuario figure img{
+	border-radius: 10px;
+	height: 150px;
+	width: 150px;
+}
+
+
+
 #principal {
 	text-align: center;
 }
