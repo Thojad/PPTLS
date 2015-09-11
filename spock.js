@@ -1,4 +1,5 @@
-function juego() {
+function juego () {
+	
 
 //Genera un numero aleatorio entre un rango de enteros
 function aleatorio (minimo,maximo) {
@@ -20,10 +21,8 @@ var opcionMaquina = aleatorio(0,4);;
 
 opcionUsuario = document.getElementById("opcion").value;
 
-
 document.getElementById('principal').innerHTML += "Elegiste " + opciones[opcionUsuario];
 document.getElementById('principal').innerHTML += "<br>JavaScript eligió " + opciones[opcionMaquina];
-
 
 if (opcionUsuario == piedra) {
 	if (opcionMaquina == piedra) {
