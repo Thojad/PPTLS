@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script type="text/javascript" src="scripts/imagenes.js"></script>
 </head>
 <body style="background-color: #151718">
 	<header>
@@ -16,17 +17,18 @@
 	<div class="container">
 		<nav>
 			<ul class="menu">
-				<li><a href="#"> Rock</a></li>
-				<li><a href="#"> Paper</a></li>
-				<li><a href="#"> Scissors</a></li>
-				<li><a href="#"> Lizard</a></li>
-				<li><a href="#"> Spock</a></li>
+				<li><a href="#" onclick="insertar(0)"> Rock</a></li>
+				<li><a href="#" onclick="insertar(1)"> Paper</a></li>
+				<li><a href="#" 
+				onclick="insertar(2)"> Scissors</a></li>
+				<li><a href="#" onclick="insertar(3)"> Lizard</a></li>
+				<li><a href="#" onclick="insertar(4)"> Spock</a></li>
 			</ul>
 		</nav>
 		<div class="flex-column">
 			<div class="contenedor_img">
-				<div class="usuario">
-					<figure><img src="img/spock.jpg" ></figure>
+				<div class="usuario" id="user">
+					<figure class="pos_user"><img src="img/rock.jpg"></figure>
 				</div>
 
 				<div class="maquina">
