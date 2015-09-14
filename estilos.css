@@ -19,11 +19,13 @@ header {
 footer{
 	background: #1FC2C3;
 	color: white;
+	display: block;
 	font-weight: bold;
-	height: 12em;
-	margin-top: 2em;
-	padding-top: 4em;
+	height: 5em;
+	margin-top: 12em;
+	padding: 0.7em;
 	text-align: center;
+	width: 100%;
 }
 
 nav {
@@ -157,6 +159,10 @@ nav {
 	border-radius: 10px;
 	height: 150px;
 	width: 150px;
+}
+
+#dato {
+	display: none;
 }
 
 /*Inicio Estructura general del la pagina inicial*/
