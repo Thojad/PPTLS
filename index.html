@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script type="text/javascript" src="scripts/imagenes.js"></script>
+	<script type="text/javascript" src="scripts/spock.js"></script>
 </head>
 <body style="background-color: #151718">
 	<header>
@@ -28,7 +28,7 @@
 		<div class="flex-column">
 			<div class="contenedor_img">
 				<div class="usuario" id="user">
-					<figure class="pos_user"><img src="img/rock.jpg"></figure>
+					<figure class="pos_user"><img onload="insertar(1)"></figure>
 				</div>
 
 				<div class="maquina">
@@ -36,7 +36,8 @@
 				</div>
 			</div>
 
-			<div class="jugar center-block">JUGAR</div>
+			<!-- <div class="jugar center-block">JUGAR</div> -->
+			<input type="submit" value="JUGAR" class="jugar center-block" onclick="juego()">
 		</div>
 	</div>
 	<footer>

@@ -1,5 +1,10 @@
+function insertar(numero) {
+	var nameImage = ["rock","paper","scissors","lizard","spock"]
+	var resultado = document.getElementById('user').innerHTML = "<img class=\"pos_user\" src=\"img/"+nameImage[numero]+".jpg\"/>";
+	return numero;
+}
+
 function juego () {
-	
 
 //Genera un numero aleatorio entre un rango de enteros
 function aleatorio (minimo,maximo) {
@@ -19,10 +24,14 @@ var opciones = ["Piedra", "Papel", "Tijera", "Lagarto","Spock"];
 var opcionUsuario;
 var opcionMaquina = aleatorio(0,4);;
 
-opcionUsuario = document.getElementById("opcion").value;
+/*opcionUsuario = document.getElementById("user").value;*/
 
-document.getElementById('principal').innerHTML += "Elegiste " + opciones[opcionUsuario];
-document.getElementById('principal').innerHTML += "<br>JavaScript eligió " + opciones[opcionMaquina];
+alert(insertar());
+
+/*document.getElementById('principal').innerHTML += "Elegiste " + opciones[opcionUsuario];
+document.getElementById('principal').innerHTML += "<br>JavaScript eligió " + opciones[opcionMaquina];*/
+
+
 
 if (opcionUsuario == piedra) {
 	if (opcionMaquina == piedra) {

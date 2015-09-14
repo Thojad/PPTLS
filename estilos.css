@@ -44,11 +44,24 @@ nav {
 }
 
 .jugar {
-	background: #E23333;
+	background: #B82D2D;
 	border-radius: 10px;
+	color: #1E0F0F;
+	font-weight: bold;
+	font-size: 20px;
 	padding: 1em;
 	text-align: center;
 	width: 150px;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.jugar:hover {
+	background: #E23333;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 .menu {
@@ -128,7 +141,7 @@ nav {
 
 .usuario {
 	border-radius: 20px;
-	background: red;
+	background: #E8CFCF;
 	height: 200px;
 	margin-right:1.5em; 
 	width: 200px;
