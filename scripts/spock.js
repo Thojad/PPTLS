@@ -1,7 +1,17 @@
+function primeraImg() {
+	var nameImage = ["rock.jpg","paper.jpg","scissors.jpg","lizard.jpg","spock.jpg"]
+	var numAle = aleatorio(0,4);
+	var result = document.getElementById('user').innerHTML = "<img class=\"pos_user\" src=\"img/"+name[numAle]+"\"/>";
+	insertar(numAle);
+	return result;
+}
+
 
 /*muestra resultado en un div abajo del boton jugar*/
 function resultado(miResultado){
-	return document.getElementById("resultado").innerHTML = miResultado;
+	/*document.getElementByClassName('resultado').innerHTML = miResultado;*/
+	var añadir = document.querySelector('.resultado');
+	añadir.innerHTML = miResultado;
 }
 
 
@@ -33,15 +43,14 @@ function insertar(pos) {
 }
 
 
-function juego () {
-//Genera un numero aleatorio entre un rango de enteros
-
-
 function aleatorio (minimo,maximo) {
 	var numero = Math.floor(Math.random()*(maximo - minimo +1) + minimo);
 	return numero;
 
 }
+
+function juego () {
+//Genera un numero aleatorio entre un rango de enteros
 
 var piedra = 0;
 var papel = 1;

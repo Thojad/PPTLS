@@ -34,8 +34,6 @@ nav {
 }
 
 
-
-
 .contenedor_img {
 	display: flex;
 	justify-content: center;
@@ -165,32 +163,29 @@ nav {
 	display: none;
 }
 
-#resultado {
+.resultado {
 	background: gray;
 	border-radius:10px ;
 	color: white;
-	font-size: 40px;
+	font-size: 35px;
 	height: 100px;
 	margin-top: 1em;
 	margin-left: 3.4em;
-	padding-top: 0.4em;
+	padding-top: 0.65em;
 	text-align: center;
 	width: 200px;
-
-
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
-.flex-column {
-	outline: 1px solid red;
-}
 
 /*Inicio Estructura general del la pagina inicial*/
 /*no olvidar el width en el nav, es solo en este caso*/
 .container {
-	outline: 1px solid green;
-	font-family: 'Raleway', sans-serif;
 	/*background-color: #151718;*/
 	display: -webkit-flex;
+	font-family: 'Raleway', sans-serif;
   	display: flex;
   	width: 100%;
 }
@@ -198,6 +193,7 @@ nav {
   width: 150px;
 }*/
 .flex-column {
+	padding-left: 2em;
   	-webkit-flex: 1;
           flex: 1;
 }

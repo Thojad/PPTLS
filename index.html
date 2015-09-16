@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script type="text/javascript" src="scripts/spock.js"></script>
 </head>
-<body style="background-color: #151718">
+<body style="background-color: #151718" onLoad="primeraImg()">
 	<header>
 		<h1>Rock Paper Scissors Lizard Spock</h1>
 	</header>
@@ -24,10 +24,10 @@
 				<li><a href="#" onclick=" insertar(4)"> Spock</a></li>
 			</ul>
 		</nav>
-		<div class="flex-column">
+		<div class="flex-column center-block">
 			<div class="contenedor_img">
 				<div class="usuario" id="user">
-					<figure class="pos_user"><img src="img/rock.jpg"></figure>
+					<figure class="pos_user"><img src=""></figure>
 				</div>
 
 				<div class="maquina" id="machine">
@@ -35,10 +35,9 @@
 				</div>
 			</div>
 
-			<!-- <div class="jugar center-block">JUGAR</div> -->
 			<input type="submit" value="JUGAR" class="jugar center-block" onclick="juego()">
 
-			<div id="resultado" onclick="resultado()"></div>
+			<div class="resultado center-block"></div>
 		</div>
 	</div>
 	<footer>
