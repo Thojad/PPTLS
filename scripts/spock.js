@@ -1,3 +1,11 @@
+
+/*muestra resultado en un div abajo del boton jugar*/
+function resultado(miResultado){
+	return document.getElementById("resultado").innerHTML = miResultado;
+}
+
+
+
 function insertar(pos) {
 	//inserta una imagen relacionando cada item del menu.
 	var nameImage = ["rock.jpg","paper.jpg","scissors.jpg","lizard.jpg","spock.jpg"]
@@ -55,87 +63,112 @@ function insertarEnMaquina(pos){
 
 if (opcionUsuario == piedra) {
 	if (opcionMaquina == piedra) {
-		alert("Empate!");
+		/*alert("Empate!");*/
+		resultado("Empate!");
 	}
 	else if(opcionMaquina == papel){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if (opcionMaquina == tijera){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}
 	else if (opcionMaquina == lagarto){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}
 	else if (opcionMaquina == spock){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 }
 else if(opcionUsuario == papel){
 	if (opcionMaquina == piedra) {
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}
 	else if(opcionMaquina == papel){
-		alert("Empate!");
+		/*alert("Empate!");*/
+		resultado("Empate!");
 	}
 	else if (opcionMaquina == tijera){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if (opcionMaquina == lagarto){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if (opcionMaquina == spock){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}	
 }
 else if( opcionUsuario == tijera){
 	if (opcionMaquina == piedra) {
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if(opcionMaquina == papel){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!")
 	}
 	else if (opcionMaquina == tijera){
-		alert("Empate!");
+		/*alert("Empate!");*/
+		resultado("Empate!");
 	}
 	else if (opcionMaquina == lagarto){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}
 	else if (opcionMaquina == spock){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}	
 }
 else if( opcionUsuario == lagarto){
 	if (opcionMaquina == piedra) {
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if(opcionMaquina == papel){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}
 	else if (opcionMaquina == tijera){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if (opcionMaquina == lagarto){
-		alert("Empate!");
+		/*alert("Empate!");*/
+		resultado("Empate!");
 	}
 	else if (opcionMaquina == spock){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}	
 }
 else if( opcionUsuario == spock){
 	if (opcionMaquina == piedra) {
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if(opcionMaquina == papel){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if (opcionMaquina == tijera){
-		alert("Ganaste!");
+		/*alert("Ganaste!");*/
+		resultado("Ganaste!");
 	}
 	else if (opcionMaquina == lagarto){
-		alert("Perdiste!");
+		/*alert("Perdiste!");*/
+		resultado("Perdiste!");
 	}
 	else if (opcionMaquina == spock){
-		alert("Empate!");
+		/*alert("Empate!");*/
+		resultado("Empate!");
 	}	
 }
 else{
