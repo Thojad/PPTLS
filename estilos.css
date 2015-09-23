@@ -1,4 +1,5 @@
 /* latin */
+/*
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -49,6 +50,7 @@ nav {
 	color: #1E0F0F;
 	font-weight: bold;
 	font-size: 20px;
+	height: 70px;
 	padding: 1em;
 	text-align: center;
 	width: 150px;
@@ -59,13 +61,14 @@ nav {
 
 .jugar:hover {
 	background: #E23333;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	font-size: 20.8px;
+	padding-top:0.9em;
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 .menu {
-	/*outline: 1px solid red;*/
 	list-style: none;
 	line-height: 42px;
 	padding-left: 0;
@@ -86,7 +89,6 @@ nav {
 
 
 .menu li {
-/*	outline: 1px solid green;*/
 	box-shadow: 3px 0 rgba(255,255,255,0.2) inset;
 	margin-bottom: 5px;
 	padding-left: 1em;
@@ -143,6 +145,7 @@ nav {
 	border-radius: 20px;
 	background: #E8CFCF;
 	height: 200px;
+	margin-left: 2em;
 	margin-right:1.5em; 
 	width: 200px;
 
@@ -182,19 +185,26 @@ nav {
 
 /*Inicio Estructura general del la pagina inicial*/
 /*no olvidar el width en el nav, es solo en este caso*/
+/*
 .container {
-	/*background-color: #151718;*/
 	display: -webkit-flex;
 	font-family: 'Raleway', sans-serif;
   	display: flex;
   	width: 100%;
-}
-/*nav {
-  width: 150px;
 }*/
+/*
 .flex-column {
 	padding-left: 2em;
   	-webkit-flex: 1;
           flex: 1;
-}
+}*/
 /*Fin estructura general de pagina inicial*/
+
+header {
+	width: 100%;
+	text-align: center;
+}
+
+.container-fluid {
+	outline: 1px solid green;
+}
