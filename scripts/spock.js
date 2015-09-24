@@ -1,4 +1,4 @@
-/*function primeraImg() {
+function primeraImg() {
 	var nameImage = ["rock.jpg","paper.jpg","scissors.jpg","lizard.jpg","spock.jpg"]
 	var numAle = aleatorio(0,4);
 	var result = document.getElementById('user').innerHTML = "<img class=\"pos_user\" src=\"img/"+name[numAle]+"\"/>";
@@ -183,4 +183,4 @@ else if( opcionUsuario == spock){
 else{
 	alert("¿Pos qué Carajo?");
 }
-}*/
+}
