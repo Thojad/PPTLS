@@ -226,12 +226,13 @@ header {
 }
 
 .resultado {
-	outline: 1px solid red;
-	margin: 6em;
 	left: 17.5%;
+	margin: 6em;
+	outline: 1px solid red;
 	position: absolute;
+	visibility: hidden;
 	width: 65%;
-	z-index: 100%;
+	z-index: 1;
 }
 
 @media only screen and (max-width: 991px){

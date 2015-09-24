@@ -52,8 +52,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rock Paper Scissors Lizard Spock</title>
-	<!-- <script type="text/javascript" src="scripts/spock.js"></script> -->
-	<script type="text/javascript" src="scripts/mediaQuerys.js"></script>
+	<script type="text/javascript" src="scripts/spock.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -67,49 +66,49 @@
 		<div class="col-md-1">INSTRUCIONES</div>
 		<div class="col-xs-1"></div>
 		<div class="col-xs-2">
-			<input type="image" src="img/rock.jpg">
+			<input type="image" onClick="juego('Piedra')"src="img/Piedra.jpg">
 		</div>
 		<div class="col-xs-2">
-			<input type="image" src="img/paper.jpg">
+			<input type="image" onClick="juego('Papel')" src="img/Papel.jpg">
 		</div>
 		<div class="col-xs-2">
-			<input type="image" src="img/scissors.jpg">
+			<input type="image" onClick="juego('Tijera')" src="img/Tijera.jpg">
 		</div>
 		<div class="col-xs-2">
-			<input type="image" src="img/lizard.jpg">
+			<input type="image" onClick="juego('Lagarto')" src="img/Lagarto.jpg">
 		</div>
 		<div class="col-xs-2">
-			<input type="image" src="img/spock.jpg">
+			<input type="image" onClick="juego('Spock')" src="img/Spock.jpg">
 		</div>
 	</div>
 	<div class="container-fluid center-block">
 		<div class="row">
 			<div class="col-xs-2"></div>
 			<!-- PANEL DEL USUARIO -->
-			<div class="col-xs-4" id="usuario">
+			<div class="col-xs-4">
 				<div class="panel panel-primary">
 				<div class="panel-heading">
 					USUARIO
 				</div>
-				<div class="panel-body">
-					<img src="img/rock.jpg"class="center-block img-responsive">
+				<div class="panel-body" id="usuario">
+					<img src="img/Piedra.jpg"class="center-block img-responsive">
 				</div>
 				</div>
 			</div>
 			<!-- PANEL DE LA MAQUINA -->
 			<div class="col-xs-4">
-				<div class="panel panel-info" id="maquina">
+				<div class="panel panel-info">
 				<div class="panel-heading">
 					MAQUINA
 				</div>
-				<div class="panel-body">
-					<img src="img/spock.jpg" class="center-block img-responsive">
+				<div class="panel-body" id="maquina">
+					<img src="img/Spock.jpg" class="center-block img-responsive">
 				</div>
 				</div>
 			</div>
 			<div class="col-xs-2"></div>
 
-			<div class="panel panel-default center-block resultado">
+			<div class="panel panel-default center-block resultado" id="cuadrito">
 			  <div class="panel-body">
 			    Ejemplo de panel muy sencillo
 			  </div>
