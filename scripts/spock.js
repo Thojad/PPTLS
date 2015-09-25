@@ -1,48 +1,3 @@
-/*function primeraImg() {
-	var nameImage = ["rock.jpg","paper.jpg","scissors.jpg","lizard.jpg","spock.jpg"]
-	var numAle = aleatorio(0,4);
-	var result = document.getElementById('user').innerHTML = "<img class=\"pos_user\" src=\"img/"+name[numAle]+"\"/>";
-	insertar(numAle);
-	return result;
-}*/
-
-
-/*muestra resultado en un div abajo del boton jugar*/
-/*function resultado(miResultado){
-	
-	var añadir = document.querySelector('.resultado');
-	añadir.innerHTML = miResultado;
-}*/
-
-
-
-/*function insertar(pos) {*/
-	//inserta una imagen relacionando cada item del menu.
-	/*var nameImage = ["rock.jpg","paper.jpg","scissors.jpg","lizard.jpg","spock.jpg"]
-	var resultado = document.getElementById('user').innerHTML = "<img class=\"pos_user\" src=\"img/"+nameImage[pos]+"\"/>";
-
-	var rock = "<img class=\"pos_user\" src=\"img/"+nameImage[0]+"\"/>";
-	var paper = "<img class=\"pos_user\" src=\"img/"+nameImage[1]+"\"/>";
-	var scissors = "<img class=\"pos_user\" src=\"img/"+nameImage[2]+"\"/>";
-	var lizard = "<img class=\"pos_user\" src=\"img/"+nameImage[3]+"\"/>";
-	var spock = "<img class=\"pos_user\" src=\"img/"+nameImage[4]+"\"/>";*/
-	//condiciones para devolver un valor por medio de un input type="text"
-	//el valor retornado en input se usa en opcionUsuario.
-	/*if (resultado == rock){
-		document.getElementById('user').innerHTML += "<input type=\"text\" id=\"dato\" value=\"0\"/>";
-	}else if(resultado == paper){
-		document.getElementById('user').innerHTML += "<input type=\"text\" id=\"dato\" value=\"1\"/>";
-	}else if(resultado == scissors){
-		document.getElementById('user').innerHTML += "<input type=\"text\" id=\"dato\" value=\"2\"/>";
-	}else if(resultado == lizard){
-		document.getElementById('user').innerHTML += "<input type=\"text\" id=\"dato\" value=\"3\"/>";
-	}else{
-		document.getElementById('user').innerHTML += "<input type=\"text\" id=\"dato\" value=\"4\"/>";
-	}
-	
-}
-*/
-
 function aleatorio (minimo,maximo) {
 	var numero = Math.floor(Math.random()*(maximo - minimo +1) + minimo);
 	return numero;
@@ -60,9 +15,39 @@ function imagenes(jugador,nombre){
 	return elemento;
 }
 
+/*Esta funcion pone imagenes al azar en los paneles de usuario y maquina*/
+function imagenesInicio(){
+	var opciones = ["Piedra", "Papel", "Tijera", "Lagarto","Spock"];
+	imagenes('usuario',opciones[aleatorio(0,4)]);
+	imagenes('maquina',opciones[aleatorio(0,4)]);
+}
+
 function resultado(producto){
-	document.getElementById('cuadrito').innerHTML = "<p>" +producto+"</p>";
+	document.getElementById('mensaje').innerHTML = "<p style=\"text-align:center;\">" +producto+"</p>";
 	return document.getElementById('cuadrito').style.visibility = 'visible';
+}
+
+function desaparecer(bloque){
+	document.getElementById(bloque).style.visibility = 'hidden';
+	habilitar();
+	function habilitar(){
+		document.getElementById('Piedra').disabled = false;
+		document.getElementById('Papel').disabled = false;
+		document.getElementById('Tijera').disabled = false;
+		document.getElementById('Lagarto').disabled = false;
+		document.getElementById('Spock').disabled = false;	
+	}
+
+}
+
+function limiteClick(nombres){
+	if(nombres == 'Piedra' || nombres == 'Papel' || nombres == 'Tijera' || nombres == 'Lagarto' || nombres == 'Spock'){
+		document.getElementById('Piedra').disabled = true;
+		document.getElementById('Papel').disabled = true;
+		document.getElementById('Tijera').disabled = true;
+		document.getElementById('Lagarto').disabled = true;
+		document.getElementById('Spock').disabled = true;
+	}
 }
 
 function juego(valor){
@@ -100,5 +85,7 @@ function juego(valor){
 		imagenes('maquina',opcionMaquina);
 		resultado('perdiste');
 	}
+
+	limiteClick(valor);
 }
 

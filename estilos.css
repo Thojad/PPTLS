@@ -205,8 +205,14 @@ header {
 	text-align: center;
 }
 
+.botones {
+	/*position: absolute;
+	top: 70%;
+	right: 35%;*/
+	margin-top: 8em;
+}
+
 .container-fluid {
-	outline: 1px solid green;
 	margin-top: 2em;
 	padding-top:1em;
 	position: relative;
@@ -218,7 +224,6 @@ header {
 }
 .container div:nth-child(1) {
 	text-align: center;
-	outline: 1px solid red;
 }
 .container div input {
 	width: 50px;
@@ -226,14 +231,16 @@ header {
 }
 
 .resultado {
+	height: 80%;
 	left: 17.5%;
 	margin: 6em;
-	outline: 1px solid red;
 	position: absolute;
+	bottom: 3%;
 	visibility: hidden;
 	width: 65%;
 	z-index: 1;
 }
+
 
 @media only screen and (max-width: 991px){
 	.container div:nth-child(1) {
