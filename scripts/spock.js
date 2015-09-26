@@ -72,20 +72,21 @@ function juego(valor){
 	if (opcionUsuario == opcionMaquina) {
 		imagenes('usuario',opcionUsuario);
 		imagenes('maquina',opcionMaquina);
-		resultado('empate');
+		resultado('EMPATE');
 
 	}
 	else if (condiciones[0] || condiciones[1] || condiciones[2] || condiciones[3] || condiciones[4] || condiciones[5] || condiciones[6] || condiciones[7] || condiciones[8] || condiciones[9]){
 		imagenes('usuario',opcionUsuario);
 		imagenes('maquina',opcionMaquina);
-		resultado('ganaste');
+		resultado('GANASTE!');
 	}
 	else{
 		imagenes('usuario', opcionUsuario);
 		imagenes('maquina',opcionMaquina);
-		resultado('perdiste');
+		resultado('PERDISTE');
 	}
 
 	limiteClick(valor);
-}
 
+	document.getElementsByTagName('body').style.background = "black";
+}

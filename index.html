@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Rock Paper Scissors Lizard Spock</title>
 	<script type="text/javascript" src="scripts/spock.js"></script>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
@@ -9,15 +10,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 
-<body onload="imagenesInicio()">
-	<header>
+<body onload="imagenesInicio();modificarTexto()">
+	<header class="center-block">
 		<h1>Rock Paper Scissors Lizard Spock</h1>
 	</header>
 	<div class="container">
 		<div class="col-md-1">How To Play?</div>
 		<div class="col-xs-1"></div>
+
 		<div class="col-xs-2">
-			<input type="image" id="Piedra" onClick="juego('Piedra')" src="img/Piedra.jpg">
+			<input type="image" class="prueba" id="Piedra" onClick="juego('Piedra')" src="img/Piedra.jpg">
 		</div>
 		<div class="col-xs-2">
 			<input type="image" id="Papel" onClick="juego('Papel')" src="img/Papel.jpg">
@@ -30,45 +32,44 @@
 		</div>
 		<div class="col-xs-2">
 			<input type="image" id="Spock" onClick="juego('Spock')" src="img/Spock.jpg">
-		</div>
+		</div>		
 	</div>
 	<div class="container-fluid center-block">
-		<div class="row">
-			<div class="col-xs-2"></div>
-			<!-- PANEL DEL USUARIO -->
-			<div class="col-xs-4">
-				<div class="panel panel-primary">
-				<div class="panel-heading">
-					USUARIO
-				</div>
-				<div class="panel-body" id="usuario">
-					<img src="img/Piedra.jpg"class="center-block img-responsive">
-				</div>
-				</div>
-			</div>
-			<!-- PANEL DE LA MAQUINA -->
-			<div class="col-xs-4">
-				<div class="panel panel-info">
-				<div class="panel-heading">
-					MAQUINA
-				</div>
-				<div class="panel-body" id="maquina">
-					<img src="img/Spock.jpg" class="center-block img-responsive">
-				</div>
-				</div>
-			</div>
-			<div class="col-xs-2"></div>
-
+			
 			<div class="panel panel-default center-block resultado" id="cuadrito">
-			  <div class="panel-body">
+			  <!-- <div class="panel-body"> -->
 			  	<div id="mensaje"></div>
+				
+
+				<!-- PANEL DEL USUARIO -->
+				<div class="col-xs-6">
+					<div class="panel panel-primary">
+					<div class="panel-heading">
+						YOU
+					</div>
+					<div class="panel-body" id="usuario">
+						<img src="img/Piedra.jpg"class="center-block img-responsive">
+					</div>
+					</div>
+				</div>
+				<!-- PANEL DE LA MAQUINA -->
+				<div class="col-xs-6">
+					<div class="panel panel-info">
+					<div class="panel-heading">
+						MACHINE
+					</div>
+					<div class="panel-body" id="maquina">
+						<img src="img/Spock.jpg" class="center-block img-responsive">
+					</div>
+					</div>
+				</div>
+				
 
 			  	<div class="botones">	
-			  		<button class="btn btn-primary center-block" onclick="desaparecer('cuadrito')"  >¡Volver a Jugar!</button>
+			  		<button class="btn btn-primary center-block" onclick="desaparecer('cuadrito')" >¡Volver a Jugar!</button>
 			  	</div>
-			  </div>
+			  <!-- </div> -->
 			</div>
-		</div>
   	</div>
 	
 </body>
