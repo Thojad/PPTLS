@@ -29,6 +29,7 @@ function resultado(producto){
 
 function desaparecer(bloque){
 	document.getElementById(bloque).style.visibility = 'hidden';
+	document.getElementById('cuadrito').style.opacity = "0.5";
 	habilitar();
 	function habilitar(){
 		document.getElementById('Piedra').disabled = false;
@@ -47,8 +48,10 @@ function limiteClick(nombres){
 		document.getElementById('Tijera').disabled = true;
 		document.getElementById('Lagarto').disabled = true;
 		document.getElementById('Spock').disabled = true;
+		document.getElementById('cuadrito').style.opacity = "1";
 	}
 }
+
 
 function juego(valor){
 	var opciones = ["Piedra", "Papel", "Tijera", "Lagarto","Spock"];
@@ -72,21 +75,31 @@ function juego(valor){
 	if (opcionUsuario == opcionMaquina) {
 		imagenes('usuario',opcionUsuario);
 		imagenes('maquina',opcionMaquina);
-		resultado('EMPATE');
+		document.getElementById('usuario').style.backgroundColor = "rgba(91,192,222,0.5)";
+		document.getElementById('maquina').style.backgroundColor = "rgba(91,192,222,0.5)";
+		document.getElementById('mensaje').style.color = 'rgba(91,192,222,0.9)';
+		resultado('TIE!');
 
 	}
 	else if (condiciones[0] || condiciones[1] || condiciones[2] || condiciones[3] || condiciones[4] || condiciones[5] || condiciones[6] || condiciones[7] || condiciones[8] || condiciones[9]){
 		imagenes('usuario',opcionUsuario);
 		imagenes('maquina',opcionMaquina);
-		resultado('GANASTE!');
+		document.getElementById('usuario').style.backgroundColor = "rgba(92,184,92,0.6)"; /*cambia a verde #5CB85C*/ 
+		document.getElementById('maquina').style.backgroundColor = "rgba(217,83,92,0.6)"; /*cambia a rojo #D9534F*/
+		document.getElementById('mensaje').style.color = '#5CB85C';
+		resultado('You Win!');
 	}
 	else{
 		imagenes('usuario', opcionUsuario);
 		imagenes('maquina',opcionMaquina);
-		resultado('PERDISTE');
+		document.getElementById('maquina').style.backgroundColor = "rgba(92,184,92,0.6)"; /*cambia a verde #5CB85C*/
+		document.getElementById('usuario').style.backgroundColor = "rgba(217,83,92,0.6)"; /*cambia a rojo #D9534F*/
+		document.getElementById('mensaje').style.color = '#D9534F';
+		resultado('You Lose!');
 	}
 
 	limiteClick(valor);
 
-	document.getElementsByTagName('body').style.background = "black";
 }
+
+
