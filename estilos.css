@@ -90,7 +90,7 @@ div a {
 }
 
 .botones {
-	font-family: cursive;
+	font-family: roboto;
 	margin-top: 8em;
 }
 
@@ -119,7 +119,7 @@ div a {
 }
 
 .panel-heading {
-	font-family: cursive;
+	font-family: roboto;
 	overflow: hidden;
 	text-align: center;
 }
@@ -143,7 +143,7 @@ div a {
 }
 
 #mensaje {
-	font-family: cursive;
+	font-family: roboto;
 	font-size: 2em;
 }
 
