@@ -14,69 +14,77 @@
 </head>
 
 <body onload="imagenesInicio();modificarTexto()" style="background-color: #EEE">
-	<header class="center-block">
-		<!-- <h1>Rock Paper Scissors Lizard Spock</h1> -->
+
+<div id="wrapper">
+
+	<div id="header" class="center-block">
 		<h1>Piedra Papel Tijeras Lagarto Spock</h1>
-	</header>
-
-	<div class="container">
-		<div class="col-xs-1"></div>
-
-		<div class="col-xs-2">
-			<input type="image" class="prueba" id="Piedra" onClick="juego('Piedra')" src="img/Piedra.jpg">
-		</div>
-		<div class="col-xs-2">
-			<input type="image" id="Papel" onClick="juego('Papel')" src="img/Papel.jpg">
-		</div>
-		<div class="col-xs-2">
-			<input type="image" id="Tijera" onClick="juego('Tijera')" src="img/Tijera.jpg">
-		</div>
-		<div class="col-xs-2">
-			<input type="image" id="Lagarto" onClick="juego('Lagarto')" src="img/Lagarto.jpg">
-		</div>
-		<div class="col-xs-2">
-			<input type="image" id="Spock" onClick="juego('Spock')" src="img/Spock.jpg">
-		</div>		
 	</div>
-	<div class="container-fluid center-block">
-			
-			<div class="panel panel-default center-block resultado" id="cuadrito">
-			  <!-- <div class="panel-body"> -->
-			  	<div id="mensaje"></div>
-				
 
-				<!-- PANEL DEL USUARIO -->
-				<div class="col-xs-6">
-					<div class="panel panel-primary">
-					<div class="panel-heading">
-						YOU
-					</div>
-					<div class="panel-body" id="usuario">
-						<img src="img/Piedra.jpg"class="center-block img-responsive">
-					</div>
-					</div>
-				</div>
-				<!-- PANEL DE LA MAQUINA -->
-				<div class="col-xs-6">
-					<div class="panel panel-primary">
-					<div class="panel-heading">
-						SHELDON
-					</div>
-					<div class="panel-body" id="maquina">
-						<img src="img/Spock.jpg" class="center-block img-responsive">
-					</div>
-					</div>
-				</div>
-				
+	<div id="content">
 
-			  	<div class="botones">	
-			  		<button class="btn btn-primary center-block" id="boton" onclick="desaparecer('cuadrito')" >¡Volver a Jugar!</button>
-			  	</div>
-			  <!-- </div> -->
+		<div class="container">
+			<div class="col-xs-1"></div>
+
+			<div class="col-xs-2">
+				<input type="image" class="prueba" id="Piedra" onClick="juego('Piedra')" src="img/Piedra.jpg">
 			</div>
-  	</div>
-	
-	<footer>
+			<div class="col-xs-2">
+				<input type="image" id="Papel" onClick="juego('Papel')" src="img/Papel.jpg">
+			</div>
+			<div class="col-xs-2">
+				<input type="image" id="Tijera" onClick="juego('Tijera')" src="img/Tijera.jpg">
+			</div>
+			<div class="col-xs-2">
+				<input type="image" id="Lagarto" onClick="juego('Lagarto')" src="img/Lagarto.jpg">
+			</div>
+			<div class="col-xs-2">
+				<input type="image" id="Spock" onClick="juego('Spock')" src="img/Spock.jpg">
+			</div>
+		</div>
+
+		<div class="container-fluid center-block">
+
+				<div class="panel panel-default center-block resultado" id="cuadrito">
+				  <!-- <div class="panel-body"> -->
+				  	<div id="mensaje"></div>
+
+
+					<!-- PANEL DEL USUARIO -->
+					<div class="col-xs-6">
+						<div class="panel panel-primary">
+						<div class="panel-heading">
+							YOU
+						</div>
+						<div class="panel-body" id="usuario">
+							<img src="img/Piedra.jpg"class="center-block img-responsive">
+						</div>
+						</div>
+					</div>
+					<!-- PANEL DE LA MAQUINA -->
+					<div class="col-xs-6">
+						<div class="panel panel-primary">
+						<div class="panel-heading">
+							SHELDON
+						</div>
+						<div class="panel-body" id="maquina">
+							<img src="img/Spock.jpg" class="center-block img-responsive">
+						</div>
+						</div>
+					</div>
+
+
+				  	<div class="botones">
+				  		<button class="btn btn-primary center-block" id="boton" onclick="desaparecer('cuadrito')" >¡Volver a Jugar!</button>
+				  	</div>
+				  <!-- </div> -->
+				</div>
+	  	</div>
+
+	</div>
+
+	<div id="footer">
+
 		<div>
 			<div><a href="https://github.com/Thojad" class="github"></a></div>
 			<div><a href="https://www.facebook.com/clinton.villanueva1" class="facebook"></a></div>
@@ -85,7 +93,10 @@
 		</div>
 		<p><strong>Created By Thojad</strong></p>
 		<h6>Platzi 2016</h6>
-	</footer>
+
+	</div>
+
+</div>
 
 </body>
 </html>
