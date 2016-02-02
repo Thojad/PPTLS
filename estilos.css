@@ -39,7 +39,9 @@ body {
 
 
 #content {
-    padding-bottom: 93px; /* El tamaño del footer para evitar el sobreposicionamiento */
+    /*border: 1px solid blue;*/
+    padding-bottom: 93px;
+    /* El tamaño del footer para evitar el sobreposicionamiento */
 }
 
 #footer {
@@ -125,6 +127,23 @@ div a {
 
 .container div input:hover {
 	width: 58px;
+}
+
+.instrucciones {
+  background-color: gray;
+  border: 1px solid red;
+  display: none;
+  width: 96%;
+  height: 60%;
+  position: absolute;
+  margin-left: 2%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.instrucciones a {
+  color: black;
+  float:right;
 }
 
 .panel-body {

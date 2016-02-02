@@ -9,6 +9,9 @@ function imagenes(jugador,nombre){
 		var elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
 	}
 	else{
+		if (nombre == "Piedra" || nombre == "Lagarto") {
+			nombre += "2";
+		}
 		elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
 	}
 
@@ -16,15 +19,20 @@ function imagenes(jugador,nombre){
 }
 
 /*Esta funcion pone imagenes al azar en los paneles de usuario y maquina*/
-function imagenesInicio(){
-	var opciones = ["Piedra", "Papel", "Tijera", "Lagarto","Spock"];
-	imagenes('usuario',opciones[aleatorio(0,4)]);
-	imagenes('maquina',opciones[aleatorio(0,4)]);
-}
+// function imagenesInicio(){
+// 	var opciones = ["Piedra", "Papel", "Tijera", "Lagarto","Spock"];
+// 	imagenes('usuario',opciones[aleatorio(0,4)]);
+// 	imagenes('maquina',opciones[aleatorio(0,4)]);
+// }
 
 function resultado(producto){
 	document.getElementById('mensaje').innerHTML = "<p style=\"text-align:center;\">" +producto+"</p>";
-	return document.getElementById('cuadrito').style.visibility = 'visible';
+	document.getElementById('cuadrito').style.visibility = 'visible';
+}
+
+//Esta funcion oculta la ventana de instrucciones
+function ocultarInstrucciones() {
+	document.getElementById('instruct').style.display = "none";
 }
 
 function desaparecer(bloque){
@@ -76,26 +84,38 @@ function juego(valor){
 		imagenes('usuario',opcionUsuario);
 		imagenes('maquina',opcionMaquina);
 		document.getElementById('usuario').style.backgroundColor = "rgba(91,192,222,0.5)";
+		document.getElementById('usuario').style.boxShadow = "0px 0px 15px rgba(91,192,222,0.5)";
+
 		document.getElementById('maquina').style.backgroundColor = "rgba(91,192,222,0.5)";
+		document.getElementById('maquina').style.boxShadow = "0px 0px 15px rgba(91,192,222,0.5)";
+
 		document.getElementById('mensaje').style.color = 'rgba(91,192,222,0.9)';
-		resultado('TIE!');
+		resultado('¡Empate!');
 
 	}
 	else if (condiciones[0] || condiciones[1] || condiciones[2] || condiciones[3] || condiciones[4] || condiciones[5] || condiciones[6] || condiciones[7] || condiciones[8] || condiciones[9]){
 		imagenes('usuario',opcionUsuario);
 		imagenes('maquina',opcionMaquina);
 		document.getElementById('usuario').style.backgroundColor = "rgba(92,184,92,0.6)"; /*cambia a verde #5CB85C*/
+		document.getElementById('usuario').style.boxShadow = "0px 0px 15px #5CB85C";
+
 		document.getElementById('maquina').style.backgroundColor = "rgba(217,83,92,0.6)"; /*cambia a rojo #D9534F*/
+		document.getElementById('maquina').style.boxShadow = "0px 0px 15px #D9534F";
+
 		document.getElementById('mensaje').style.color = '#5CB85C';
-		resultado('You Win!');
+		resultado('¡Ganaste!');
 	}
 	else{
 		imagenes('usuario', opcionUsuario);
 		imagenes('maquina',opcionMaquina);
-		document.getElementById('maquina').style.backgroundColor = "rgba(92,184,92,0.6)"; /*cambia a verde #5CB85C*/
 		document.getElementById('usuario').style.backgroundColor = "rgba(217,83,92,0.6)"; /*cambia a rojo #D9534F*/
+		document.getElementById('usuario').style.boxShadow = "0px 0px 15px #D9534F";
+
+		document.getElementById('maquina').style.backgroundColor = "rgba(92,184,92,0.6)"; /*cambia a verde #5CB85C*/
+		document.getElementById('maquina').style.boxShadow = "0px 0px 15px #5CB85C";
+
 		document.getElementById('mensaje').style.color = '#D9534F';
-		resultado('You Lose!');
+		resultado('¡Perdiste!');
 	}
 
 	limiteClick(valor);
