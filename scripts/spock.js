@@ -32,7 +32,13 @@ function resultado(producto){
 
 //Esta funcion oculta la ventana de instrucciones
 function ocultarInstrucciones() {
-	document.getElementById('instruct').style.display = "none";
+	document.getElementById('instruct').style.visibility = "hidden";
+}
+
+//Esta funcion muestra la ventana de instrucciones
+
+function mostrarInstrucciones() {
+	document.getElementById('instruct').style.visibility = "visible";
 }
 
 function desaparecer(bloque){
