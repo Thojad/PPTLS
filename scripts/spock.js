@@ -39,6 +39,7 @@ function desaparecer(bloque){
 	document.getElementById(bloque).style.visibility = 'hidden';
 	document.getElementById('cuadrito').style.opacity = "0.5";
 	habilitar();
+
 	function habilitar(){
 		document.getElementById('Piedra').disabled = false;
 		document.getElementById('Papel').disabled = false;

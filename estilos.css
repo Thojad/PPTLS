@@ -33,6 +33,7 @@
 
 html,
 body {
+    background-color: #EEEEEE !important ;
     height: 100%;
 }
 
@@ -111,13 +112,11 @@ div a {
 
 
 .container {
+  /*border: 1px solid red;*/
 	width: 100%;
 }
 
 
-.container div:nth-child(1) {
-	text-align: center;
-}
 .container div input {
 	width: 49px;
 	-webkit-transition: all 0.5s;
@@ -179,11 +178,11 @@ div a {
 	font-size: 2em;
 }
 
-@media only screen and (max-width: 991px){
+/*@media only screen and (max-width: 991px){
 	.container div:nth-child(1) {
 		padding: 0.8em;
 	}
-}
+}*/
 
 @media only screen and (max-width: 400px){
 
@@ -215,14 +214,15 @@ div a {
 
 	}
 
-	.container div input:hover{
-		width: 52px;
-	}
+  .container .col-xs-2:nth-child(1) {
+    padding-right: 20px;
+    padding-left: 0px;
+  }
 
-	.container div:nth-child(1){
-		display: none;
+  .container .col-xs-2:nth-child(2){
+    padding-left: 7px;
+  }
 
-	}
 }
 
 @media only screen and (min-width: 500px){

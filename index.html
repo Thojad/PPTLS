@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 
-<body onload="modificarTexto()" style="background-color: #EEE">
+<body onload="modificarTexto()" >
 
 <div id="wrapper">
 
@@ -26,13 +26,17 @@
 		<button class="btn btn-primary center-block" onclick="ocultarInstrucciones()" >¡Jugar!</button>
 	</div>
 
+
+
 	<div id="content" >
 
 		<div class="container">
-			<div class="col-xs-1"></div>
 
 			<div class="col-xs-2">
-				<input type="image" class="prueba" id="Piedra" onClick="juego('Piedra')" src="img/Piedra.png">
+				<input type="image" id="Piedra" onClick="juego('Papel')" src="img/question.png">
+			</div>
+			<div class="col-xs-2">
+				<input type="image"  id="Piedra" onClick="juego('Piedra')" src="img/Piedra.png">
 			</div>
 			<div class="col-xs-2">
 				<input type="image" id="Papel" onClick="juego('Papel')" src="img/Papel.png">
@@ -46,7 +50,9 @@
 			<div class="col-xs-2">
 				<input type="image" id="Spock" onClick="juego('Spock')" src="img/Spock.png">
 			</div>
+
 		</div>
+
 
 
 		<div class="container-fluid center-block">
