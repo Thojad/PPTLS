@@ -128,25 +128,6 @@ div a {
 	width: 58px;
 }
 
-.instrucciones {
-  background-color: white;
-  border: 1px solid red;
-  height: 380px;
-  width: 650px;
-  max-width: 100%;
-  max-height: 90%;
-  margin: auto;
-  position: absolute;
-  overflow: hidden;
-
-  visibility: hidden;
-  z-index: 2;
-}
-
-.instrucciones button {
-  margin-top: 0.2em;
-}
-
 .panel-body {
 	background-color: #5CB85C;
 }
@@ -186,18 +167,13 @@ div a {
 	}
 }*/
 
+
 @media only screen and (max-width: 400px){
 
 	header {
 		width: 100%;
 		text-align: center;
 	}
-
-  .instrucciones {
-    max-width: 90%;
-    max-height: 28%;
-    left: 5%;
-  }
 
 }
 

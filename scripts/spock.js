@@ -30,16 +30,6 @@ function resultado(producto){
 	document.getElementById('cuadrito').style.visibility = 'visible';
 }
 
-//Esta funcion oculta la ventana de instrucciones
-function ocultarInstrucciones() {
-	document.getElementById('instruct').style.visibility = "hidden";
-}
-
-//Esta funcion muestra la ventana de instrucciones
-
-function mostrarInstrucciones() {
-	document.getElementById('instruct').style.visibility = "visible";
-}
 
 function desaparecer(bloque){
 	document.getElementById(bloque).style.visibility = 'hidden';
@@ -54,6 +44,12 @@ function desaparecer(bloque){
 		document.getElementById('Spock').disabled = false;
 	}
 
+}
+
+//Funcion para abrir instrucciones que se muestran en un video de youtube
+function abrirLink(url) {
+	var win = window.open(url,'_blank');
+	win.focus();
 }
 
 function limiteClick(nombres){
