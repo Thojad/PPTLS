@@ -43,7 +43,6 @@ function desaparecer(bloque){
 		document.getElementById('Lagarto').disabled = false;
 		document.getElementById('Spock').disabled = false;
 	}
-
 }
 
 //Funcion para abrir instrucciones que se muestran en un video de youtube
@@ -51,6 +50,25 @@ function abrirLink(url) {
 	var win = window.open(url,'_blank');
 	win.focus();
 }
+
+//Función para darle color a las palabras del titulo del header
+// function colorHeader() {
+// 	var titulo = document.getElementById('titulo').innerHTML;
+// 	var palabras = titulo.split(" ");
+//
+// 	for (var i = 0; i < palabras.length; i++) {
+// 		if (palabras[0]) {
+//
+// 		}
+//
+// 	}
+//
+// 	console.log(titulo);
+// 	console.log(palabras);
+//
+//
+//
+// }
 
 function limiteClick(nombres){
 	if(nombres == 'Piedra' || nombres == 'Papel' || nombres == 'Tijera' || nombres == 'Lagarto' || nombres == 'Spock'){

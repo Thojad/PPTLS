@@ -118,15 +118,39 @@ div a {
 
 
 .container div input {
-	width: 49px;
+	width: 50px;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
+/*Inicio de hover*/
 .container div input:hover {
-	width: 58px;
+  border-radius: 8px;
+	width: 55px;
 }
+
+#Piedra:hover {
+  background-color: #A47A6A; /*cafe*/
+}
+
+#Papel:hover {
+  background-color: #FFAC1F; /*amarillo*/
+}
+
+#Tijera:hover {
+  background-color: #FF5050; /*rojo*/
+}
+
+#Lagarto:hover {
+  background-color: #8BC34A; /*Verde */
+}
+
+#Spock:hover {
+  background-color: #419DED; /*azul*/
+}
+/*Final de hover*/
+
 
 .panel-body {
 	background-color: #5CB85C;
