@@ -11,11 +11,13 @@ function imagenes(jugador,nombre){
 	else{
 		if (nombre == "Piedra" || nombre == "Lagarto") {
 			nombre += "2";
-			console.log("dentro del if"+nombre);
+			elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
+		}
+		else{
+			elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
 		}
 
-		elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
-		console.log("fuera del if"+nombre);
+
 	}
 
 	return elemento;
