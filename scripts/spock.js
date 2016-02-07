@@ -10,8 +10,7 @@ function imagenes(jugador,nombre){
 	}
 	else{
 		if (nombre == "Piedra" || nombre == "Lagarto") {
-			nombre += "2";
-			elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
+			elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + "2.png\" class=\"center-block img-responsive\">";
 		}
 		else{
 			elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
