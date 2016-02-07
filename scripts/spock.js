@@ -11,8 +11,11 @@ function imagenes(jugador,nombre){
 	else{
 		if (nombre == "Piedra" || nombre == "Lagarto") {
 			nombre += "2";
+			console.log("dentro del if"+nombre);
 		}
+
 		elemento = document.getElementById(jugador).innerHTML = "<img src=\"img/" + nombre + ".png\" class=\"center-block img-responsive\">";
+		console.log("fuera del if"+nombre);
 	}
 
 	return elemento;
@@ -51,24 +54,6 @@ function abrirLink(url) {
 	win.focus();
 }
 
-//Función para darle color a las palabras del titulo del header
-// function colorHeader() {
-// 	var titulo = document.getElementById('titulo').innerHTML;
-// 	var palabras = titulo.split(" ");
-//
-// 	for (var i = 0; i < palabras.length; i++) {
-// 		if (palabras[0]) {
-//
-// 		}
-//
-// 	}
-//
-// 	console.log(titulo);
-// 	console.log(palabras);
-//
-//
-//
-// }
 
 function limiteClick(nombres){
 	if(nombres == 'Piedra' || nombres == 'Papel' || nombres == 'Tijera' || nombres == 'Lagarto' || nombres == 'Spock'){

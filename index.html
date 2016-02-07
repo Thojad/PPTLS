@@ -11,9 +11,13 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+
+
 </head>
 
-<body onload="colorHeader();" >
+<body>
 
 <div id="wrapper">
 
@@ -26,23 +30,23 @@
 		<div class="container">
 
 			<div class="col-xs-2">
-				<input type="image"  onClick="abrirLink('https://www.youtube.com/watch?v=mLE2jBNhNQA')" src="img/question.png">
+				<input type="image"  id="Question"  data-placement="bottom" title="¡Instrucciones!" onClick="abrirLink('https://www.youtube.com/watch?v=mLE2jBNhNQA')" alt="Instrucciones" src="img/question.png">
 			</div>
 
 			<div class="col-xs-2">
-				<input type="image"  id="Piedra" onClick="juego('Piedra')" src="img/Piedra.png">
+				<input type="image"  id="Piedra" data-placement="bottom" title="¡Piedra!" onClick="juego('Piedra')" src="img/Piedra.png">
 			</div>
 			<div class="col-xs-2">
-				<input type="image" id="Papel" onClick="juego('Papel')" src="img/Papel.png">
+				<input type="image" id="Papel" data-placement="bottom" title="¡Papel!" onClick="juego('Papel')" src="img/Papel.png">
 			</div>
 			<div class="col-xs-2">
-				<input type="image" id="Tijera" onClick="juego('Tijera')" src="img/Tijera.png">
+				<input type="image" id="Tijera" data-placement="bottom" title="¡Tijeras!" onClick="juego('Tijera')" src="img/Tijera.png">
 			</div>
 			<div class="col-xs-2">
-				<input type="image" id="Lagarto" onClick="juego('Lagarto')" src="img/Lagarto.png">
+				<input type="image" id="Lagarto" data-placement="bottom" title="¡Lagarto!" onClick="juego('Lagarto')" src="img/Lagarto.png">
 			</div>
 			<div class="col-xs-2">
-				<input type="image" id="Spock" onClick="juego('Spock')" src="img/Spock.png">
+				<input type="image" id="Spock" data-placement="bottom" title="¡Spock!" onClick="juego('Spock')" src="img/Spock.png">
 			</div>
 
 		</div>
@@ -101,6 +105,21 @@
 	</div>
 
 </div>
+
+
+<!-- Script solo para hacer tooltip de cada item del container-->
+<!-- <script>
+$(document).ready(function(){
+    // $('[data-toggle="tooltip"]').tooltip();Question
+		$('#Question').tooltip({title:"¡Instrucciones!", trigger: "click"});
+		$('#Piedra').tooltip({title:"¡Piedra!", trigger: "click"});
+		$('#Papel').tooltip({title:"¡Papel!", trigger: "click"});
+		$('#Tijera').tooltip({title:"¡Tijeras!", trigger: "click"});
+		$('#Lagarto').tooltip({title:"¡Lagarto!", trigger: "click"});
+		$('#Spock').tooltip({title:"¡Spock!", trigger: "click"});
+}); -->
+
+</script>
 
 </body>
 </html>

@@ -130,6 +130,11 @@ div a {
 	width: 55px;
 }
 
+#Question:hover {
+  border-radius: 100px;
+  background-color: #BEE1ED; /*cafe*/
+}
+
 #Piedra:hover {
   background-color: #A47A6A; /*cafe*/
 }
