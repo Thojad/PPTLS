@@ -22,13 +22,6 @@ function imagenes(jugador,nombre){
 	return elemento;
 }
 
-/*Esta funcion pone imagenes al azar en los paneles de usuario y maquina*/
-// function imagenesInicio(){
-// 	var opciones = ["Piedra", "Papel", "Tijera", "Lagarto","Spock"];
-// 	imagenes('usuario',opciones[aleatorio(0,4)]);
-// 	imagenes('maquina',opciones[aleatorio(0,4)]);
-// }
-
 function resultado(producto){
 	document.getElementById('mensaje').innerHTML = "<p style=\"text-align:center;\">" +producto+"</p>";
 	document.getElementById('cuadrito').style.visibility = 'visible';
